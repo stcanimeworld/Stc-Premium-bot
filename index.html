@@ -319,7 +319,7 @@
             document.getElementById('total-ads-watched').textContent = userState.lifetimeAdCount || 0;
             document.getElementById('total-earned').textContent = (userState.totalEarned || 0).toFixed(2);
             document.getElementById('earning-wallet-balance').textContent = earningWalletBalance.toFixed(2);
-            document.getElementById('move-to-balance-btn').disabled = earningWalletBalance < 100;
+            document.getElementById('move-to-balance-btn').disabled = earningWalletBalance < 50;
             renderAdTask(); renderAdProgress(); renderDynamicTasks(); renderReferralSection(); renderWithdrawSection(); renderEarningsGraph(); renderDynamicLinks();
         };
         
